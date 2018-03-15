@@ -1,0 +1,45 @@
+$gutter-default--basics: 20px;
+
+$color-basics--default: #058;
+$color-basics--light: lighten($color-basics--default, 20%);
+$color-basics--lighter: lighten($color-basics--light, 20%);
+$color-basics--lightest: lighten($color-basics--lighter, 20%);
+
+html.html--nid-21023,
+html.html--nid-21024,
+html.html--nid-21025,
+html.html--nid-21026,
+html.html--nid-21027,
+html.html--nid-21028,
+html.html--nid-21034,
+html.html--nid-21035,
+html.html--nid-21038 {
+
+  .box-container {
+    background-color: $color-basics--lightest;
+
+    p {
+      color: #fff;
+      padding: 10px;
+      margin: 0;
+      line-height: 1;
+      background-color: $color-basics--light;
+    }
+    
+  }
+
+  .simple-box {
+    background-color: #06c;
+    display: flex;
+    align-items: center;
+    margin-bottom: $gutter-default--basics;
+    p {
+      color: white;
+      text-align: center;
+      line-height: 1.2;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+}

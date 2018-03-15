@@ -1,0 +1,74 @@
+$gutter--default: 20px;
+
+$color--default: #058;
+$color--light: lighten($color--default, 20%);
+$color--lighter: lighten($color--light, 20%);
+$color--lightest: lighten($color--lighter, 20%);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-size: 1em;
+  padding: 0;
+}
+
+.page-wrapper {
+
+  padding: 0;
+  margin: 0;
+
+  &:before {
+    content: 'INFO';
+    position: fixed;
+    top: 11px;
+    right: 11px;
+    background-color: white;
+    padding: 8px 10px;
+    font-size: 16px;
+    line-height: 1;
+    z-index: 1000;
+    border: 1px solid black;
+    opacity: .85;
+    border-radius: 6px;
+  }
+}
+
+header {
+  font-size: 14px;
+  margin: 0;
+}
+
+#block-deansluyter-page-title {
+  display: none;
+}
+
+.region-content {
+  // display: none;
+  // margin-bottom: 2 * $gutter--default;
+  // font-size: 12px;
+}
+
+.is-admin-route .region-content {
+  // display: block;
+}
+
+.tabs.primary {
+  margin-bottom: 0;
+}
+
+.inner {
+  padding: $gutter--default;
+}
+
+pre {
+  font-family: "Ubuntu Mono", Inconsolata;
+  font-size: 1em;
+  background-color: mix(#fff, transparent, 50%);
+  border: 1px solid mix(#000, transparent, 20%);
+  box-shadow: inset 0 0 30px mix(#000, transparent, 20%);
+  padding: .75em;
+  overflow: auto;
+}

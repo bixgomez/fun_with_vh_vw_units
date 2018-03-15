@@ -1,0 +1,19 @@
+html.html--nid-21017 {
+
+  .featured {
+    > .inner {
+      display: flex;
+    }
+    .carousel {
+      flex: none;
+      width: 47.5vw;
+    }
+    .posts {
+      font-size: 1.15vw;
+      flex: none;
+      width: 40.5vw;
+      margin-left: 1.6vw;
+    }
+  }
+
+}

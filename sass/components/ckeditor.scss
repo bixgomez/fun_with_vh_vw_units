@@ -1,0 +1,57 @@
+@import 'vh-vw-examples/page-node--21019';
+
+$img-margin: $gutter-width--default;
+
+body.cke_editable {
+
+  @include body;
+
+  background-color: white;
+  width: 960px;
+  overflow: auto;
+
+  p {
+    @include p;
+  }
+
+  span.cke_widget_inline.cke_widget_image {
+
+    position: relative;
+
+    &.align-left > img {
+      @include img--align-left;
+    }
+
+    &.align-right > img {
+      @include img--align-right;
+    }
+
+  }
+
+}
+
+span.cke_widget_drag_handler_container {
+  opacity: 1;
+  background-color: yellow !important;
+  background-image: url("/core/assets/vendor/ckeditor/plugins/widget/images/handle.png") !important;
+  background-size: cover !important;
+  width: $img-margin !important;
+  height: $img-margin !important;
+  top: ($img-margin * .25) !important;
+  left: ($img-margin * .25) !important;
+  .align-right & {
+    left: $img-margin + ($img-margin * .25) !important;
+  }
+}
+
+span.cke_image_resizer {
+  background-color: red !important;
+  outline: 1px solid yellow !important;
+  width: $img-margin !important;
+  height: $img-margin !important;
+  right: $img-margin + ($img-margin * .25) !important;
+  bottom: $img-margin + ($img-margin * .25) !important;
+  .align-right & {
+    left: $img-margin + ($img-margin * .25) !important;
+  }
+}

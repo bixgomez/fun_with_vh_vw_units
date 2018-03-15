@@ -1,0 +1,84 @@
+$gutter-teasers: 1.75vw;
+$gutter-teasers--narrow: ($gutter-teasers * .75);
+
+$gutter-teasers--max__val: ((strip-unit($gutter-teasers) * strip-unit($max-site-width)) / 100);
+$gutter-teasers--max--narrow__val: $gutter-teasers--max__val * .75;
+
+$gutter-teasers--max: #{$gutter-teasers--max__val}px;
+$gutter-teasers--narrow--max: #{$gutter-teasers--max--narrow__val}px;
+
+$bgcolor--teasers--default: #cbb;
+$bgcolor--teasers--light: lighten($bgcolor--teasers--default, 10%);
+$bgcolor--teasers--lighter: lighten($bgcolor--teasers--light, 10%);
+
+html.html--nid-21016,
+html.html--nid-21017,
+html.html--nid-21031,
+html.html--nid-21032,
+html.html--nid-21033 {
+
+  body {
+    background-color: $bgcolor--teasers--default;
+  }
+
+  .page-wrapper {
+    padding: $gutter-teasers;
+    @include breakpoint($max-site-width) {
+      padding: $gutter-teasers--max;
+    }
+    background-color: $bgcolor--teasers--default;
+  }
+
+  .page-container {
+    padding: $gutter-teasers--narrow;
+    @include breakpoint($max-site-width) {
+      padding: $gutter-teasers--narrow--max;
+    }
+    background-color: $bgcolor--teasers--light;
+  }
+
+  .region {
+    margin-bottom: $gutter-teasers;
+    @include breakpoint($max-site-width) {
+      margin-bottom: $gutter-teasers--max;
+    }
+    .inner {
+      padding: 0;
+    }
+  }
+
+  .featured {
+    background-color: $bgcolor--teasers--lighter;
+    padding: $gutter-teasers--narrow;
+    @include breakpoint($max-site-width) {
+      padding: $gutter-teasers--narrow--max;
+    }
+  }
+
+  .carousel {
+    > .inner {
+      background-image: url(/themes/custom/deansluyter/images/lincoln-steering-wheel.jpg);
+      background-position: center;
+      background-size:  cover;
+      overflow: hidden;
+      height: 0;
+      padding: 65% 0 0 0;
+    }
+  }
+
+  .posts {
+    .post {
+      margin-bottom: $gutter-teasers;
+      @include breakpoint($max-site-width) {
+        margin-bottom: $gutter-teasers--max;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}

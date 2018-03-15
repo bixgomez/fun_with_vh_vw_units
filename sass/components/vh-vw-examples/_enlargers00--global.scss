@@ -1,0 +1,19 @@
+$gutter-default--enlargers: 20px;
+
+html.html--nid-21013,
+html.html--nid-21014,
+html.html--nid-21022,
+html.html--nid-21021,
+html.html--nid-21015 {
+
+  body {
+    font-size: 1em;
+
+    .page-container {
+      padding: $gutter-default--enlargers;
+      margin: $gutter-default--enlargers;
+      margin-top: 0;
+    }
+  }
+
+}

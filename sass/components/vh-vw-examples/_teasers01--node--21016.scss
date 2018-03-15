@@ -1,0 +1,16 @@
+html.html--nid-21016 {
+
+  .featured {
+    > .inner {
+      display: flex;
+    }
+    .carousel {
+      flex: 1;
+    }
+    .posts {
+      flex: 1;
+      margin-left: $gutter-teasers--narrow;
+    }
+  }
+
+}

@@ -1,0 +1,35 @@
+<div class="page-container">
+  <div class="region content">
+    <div class="inner">
+
+      <h1 class="page-title">{{ page['#title'] }}</h1>
+
+      <div class="main-content">
+
+        <div class="box-container">
+
+          <div class="simple-box units units-px">
+            <p>This box is 300px wide</p>
+          </div>
+
+          <div class="simple-box units units-percent">
+            <p>This box is 50% wide</p>
+          </div>
+
+          <div class="simple-box units units-vw">
+            <p>This box is 50vw wide</p>
+          </div>
+
+          <div class="simple-box units units-vh">
+            <p>This box is 50vh wide</p>
+          </div>
+
+        </div>
+
+        {{ page.content }}
+
+      </div>
+
+    </div>
+  </div>
+</div>

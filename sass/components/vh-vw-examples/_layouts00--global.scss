@@ -1,0 +1,36 @@
+html.html--nid-21029,
+html.html--nid-21030 {
+
+  header {
+    background-image: url(../images/richmond_beach.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .page-wrapper {
+    padding: 0;
+    min-height: 100vh;
+  }
+
+  header {
+    background-color: #82B1FF;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-content {
+    margin: 0;
+    padding: 0;
+  }
+
+  footer {
+    background-color: #82B1FF;
+    margin: 0;
+    padding: 0;
+  }
+
+  .inner {
+    padding: $gutter-default--basics;
+  }
+
+}

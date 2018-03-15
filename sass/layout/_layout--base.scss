@@ -1,0 +1,26 @@
+$neat-grid: (
+  columns: 12,
+  gutter: $gutter-width--default,
+);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ccd;
+}
+
+.mm-page {
+  background-color: transparent;
+}
+
+header {
+  margin-bottom: $gutter-width--default;
+}
+
+.page-container {
+  background-color: white;
+}

@@ -1,0 +1,130 @@
+html.html--nid-20793 {
+  * {
+    text-decoration: none;
+  }
+  a {
+    color: #666;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  h4 {
+    margin-bottom: 0;
+  }
+  li {
+    margin-bottom: 0;
+  }
+  .particulars {
+    width: 60vw;
+    margin: 0 auto;
+    font-size: 2vw;
+  }
+}
+
+html.html--nid-20793,
+html.html--nid-21039 {
+
+  background-color: white;
+
+  body {
+    background-color: white;
+  }
+  
+  .page-wrapper {
+    position: relative;
+  }
+
+  .region.content {
+    .inner {
+      padding: 0;
+    }
+  }
+
+  .not-admin-route header.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    min-height: 10vh;
+    width: 100%;
+    font-size: 2vh;
+    .inner {
+      padding: 3vh;
+    }
+    ul#horizontal-menu {
+      font-size: 1em;
+    }
+    background-color: mix(#ccc, transparent, 50%);
+  }
+
+  h1.page-title {
+    display: none;
+  }
+
+  .featured-image {
+    margin: 0 auto $gutter--default;
+    border-radius: 2vmax;
+    width: 60vw;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 6vmax mix(#000, transparent, 50%);
+    background-image: url(../images/selfie.jpg);
+    &.headshot {
+      background-image: url(../images/selfie.jpg);
+      margin-top: 13vh;
+    }
+    &#newjersey {
+      background-image: url(../images/newjersey.png);
+    }
+    &#seattle {
+      background-image: url(../images/seattle.jpg);
+    }
+    &#beatles {
+      background-image: url(../images/beatles.jpg);
+    }
+    &#trains {
+      background-image: url(../images/paddington.jpg);
+    }
+    &#silentfilm {
+      background-image: url(../images/nosferatu.png);
+    }
+    &#mysteriousface {
+      background-image: url(../images/mysteriousface.png);
+    }
+    &#junkdrawerphotos {
+      background-image: url(../images/junkdrawerphotos.png);
+    }
+    &.full-height {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      border-radius: 0;
+      .link {
+        position: absolute;
+        width: 5vmax;
+        height: 5vmax;
+        right: 5vmax;
+        bottom: 5vmax;
+        padding: 0;
+        text-align: center;
+        line-height: 4.85vmax;
+        text-transform: uppercase;
+        border: 0px solid #000000;
+        display: block;
+        font-size: 1.5vmax;
+        text-decoration: none;
+        background-color: mix(#000, transparent, 20%);
+        color: white;
+        border-radius: 50%;
+        box-shadow: inset 0 0 2vmax mix(#000, transparent, 90%);
+      }
+    }
+  }
+
+}

@@ -1,0 +1,12 @@
+$gutter-default: 2vw;
+
+html.html--nid-21013 {
+
+  // Font size increases as viewport width increases
+  font-size: 2vw; // extreme
+  // font-size: calc(12px + 0.5vw); // less extreme
+
+  // Font size decreases as viewport width increases
+  // font-size: calc(18px - 0.25vw);
+
+}

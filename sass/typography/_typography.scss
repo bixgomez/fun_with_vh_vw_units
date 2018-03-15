@@ -1,0 +1,64 @@
+html {
+  font-size: $html-font-size;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $body-font-size;
+  font-weight: 500;
+  line-height: $base-line-height;
+  color: $base-font-color;
+}
+
+.page-wrapper {
+
+  h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    margin-bottom: $gutter-width--narrow;
+  }
+
+  h1, h2, h3, h4 {
+    margin-bottom: $gutter-width--narrow;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: $heading-font-family;
+    line-height: $heading-line-height;
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: $font-size-h1;
+    &.site-name {
+      font-size: $font-size-h1 * 1.25;
+    }
+  }
+
+  h2 {
+    font-size: $font-size-h2;
+  }
+
+  h3 {
+    font-size: $font-size-h3;
+  }
+
+  h4 {
+    font-size: $font-size-h4;
+  }
+
+  li {
+    margin-bottom: $gutter-width--narrow;
+    &:last-child {
+      margin-bottom: $gutter-width--narrower;
+    }
+  }
+
+  .default-page-layout {
+    font-size: 1.25em;
+  }
+
+}

@@ -1,0 +1,23 @@
+html.html--nid-21029 {
+
+  $header-height: 100px;
+  $footer-height: 125px;
+
+  .page-wrapper {
+    min-height: 100vh;
+  }
+
+  header {
+    height: $header-height;
+  }
+
+  .main-content {
+    min-height: calc(100vh - #{$header-height + $footer-height});
+  }
+
+  footer {
+    height: $footer-height;
+		overflow: hidden;
+  }
+
+}

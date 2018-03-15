@@ -1,0 +1,17 @@
+$threshold-px: 12px;
+$switch-point: $md;
+$vw-rate-up: 1.75vw;
+$vw-rate-down: 1.0vw;
+
+$up-size: baseFontSize($threshold-px, $switch-point, $vw-rate-up, 'add');
+$down-size: baseFontSize($threshold-px, $switch-point, $vw-rate-down, 'subtract');
+
+html.html--nid-21015 {
+
+  font-size: calc( #{$down-size} - #{$vw-rate-down} );
+
+  @include breakpoint($switch-point) {
+    font-size: calc( #{$up-size} + #{$vw-rate-up} );
+  }
+
+}

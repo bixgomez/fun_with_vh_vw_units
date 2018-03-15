@@ -1,0 +1,45 @@
+$gutter-width--default: 1.5em;
+
+@mixin body {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@mixin p {
+  margin-bottom: $gutter-width--default;
+}
+
+@mixin img--align-left {
+  padding-right: $gutter-width--default;
+  padding-bottom: $gutter-width--default * .5;
+}
+
+@mixin img--align-right {
+  padding-left: $gutter-width--default;
+  padding-bottom: $gutter-width--default * .5;
+}
+
+html.html--nid-21020 {
+
+  body.body--nid-21020 {
+
+    @include body;
+
+    div.region.content article {
+      padding: 0;
+
+      p {
+        @include p;
+      }
+
+      img.align-left {
+        @include img--align-left;
+      }
+
+      img.align-right {
+        @include img--align-right;
+      }
+    }
+  }
+}

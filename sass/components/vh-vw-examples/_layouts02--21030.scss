@@ -1,0 +1,13 @@
+html.html--nid-21030 {
+
+  header {
+    // height: 100vh;
+    @include breakpoint(700px) {
+      // height: 50vh;
+    }
+    @include breakpoint(900px) {
+      // height: auto;
+    }
+  }
+
+}

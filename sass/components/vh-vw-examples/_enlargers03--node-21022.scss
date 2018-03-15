@@ -1,0 +1,8 @@
+$gutter-default: 2vw;
+
+html.html--nid-21022 {
+
+  // Font size decreases as viewport width increases (mobile strategy)
+  font-size: calc(24px - 0.6vw);
+
+}

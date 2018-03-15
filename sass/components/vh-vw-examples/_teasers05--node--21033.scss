@@ -1,0 +1,38 @@
+html.html--nid-21033 {
+
+  .page-wrapper {
+    max-width: $xl;
+    margin: 0 auto;
+  }
+
+  .featured {
+
+    font-size: 20vw;
+
+    .carousel {
+      margin-bottom: $gutter-teasers;
+    }
+
+    @include breakpoint($md-up) {
+
+      > .inner {
+        display: flex;
+        font-size: 1%;
+
+        .carousel {
+          flex: none;
+          width: 47em;
+          margin-bottom: 0;
+        }
+
+        .posts {
+          font-size: 1.18em;
+          flex: none;
+          width: 35em;
+          margin-left: $gutter-teasers--narrow;
+        }
+
+      }
+    }
+  }
+}

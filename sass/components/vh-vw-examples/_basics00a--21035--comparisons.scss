@@ -1,0 +1,41 @@
+html.html--nid-21035 {
+
+  p {
+    margin: 0;
+  }
+
+  .box-container {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .simple-box {
+    margin: 0 0 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.units-px {
+      width: 300px;
+    }
+
+    &.units-percent {
+      width: 50%;
+    }
+
+    &.units-vw {
+      width: 50vw;
+    }
+
+    &.units-vh {
+      width: 50vh;
+    }
+
+    &.units p {
+      padding: 10px;
+      background-color: transparent;
+    }
+
+  }
+
+}

@@ -1,0 +1,15 @@
+name: Bix Gomez Theme
+type: theme
+description: Bix Gomez Theme
+core: 8.x
+base theme: stable
+
+libraries:
+  - bixgomez/global-styling
+
+ckeditor_stylesheets:
+  - css/components/ckeditor.css
+
+# Image appears on admin/appearance
+screenshot: screenshot.png
+

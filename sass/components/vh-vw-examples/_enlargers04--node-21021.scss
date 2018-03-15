@@ -1,0 +1,13 @@
+$gutter-default: 2vw;
+
+html.html--nid-21021 {
+
+  // Font size decreases as viewport width increases (mobile strategy)
+  font-size: calc(24px - 1.25vw);
+
+  // Font size increases as viewport width increases, above a certain breakpoint
+  @include breakpoint($md) {
+    font-size: calc(7px + 1.25vw);
+  }
+
+}

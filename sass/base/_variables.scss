@@ -1,0 +1,82 @@
+//Temporary sass-lint rule ignore until fonts are embedded
+// sass-lint:disable no-url-domains, no-url-protocols
+
+// Temporary font import
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:400,500,600,700|Ubuntu+Mono:400,700|Inconsolata:400,700');
+
+$base-font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$heading-font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+$base-font-color: #4c4c4c;
+
+$gutter-width--default: 1em;
+$gutter-width--narrow: $gutter-width--default * .5;
+$gutter-width--narrower: $gutter-width--narrow * .5;
+$gutter-width--narrowest: $gutter-width--narrower * .5;
+$gutter-width--wide: $gutter-width--default * 1.5;
+$gutter-width--wider: $gutter-width--wide * 1.5;
+$gutter-width--widest: $gutter-width--wider * 1.5;
+
+$html-font-size: 16px;
+$body-font-size: 1em;
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+$font-size-h4: $body-font-size;
+$font-size-h3: $font-size-h4 * 1.3;
+$font-size-h2: $font-size-h4 * 1.3;
+$font-size-h1: $font-size-h2 * 1.3;
+
+// Monochrome
+$light-gray: #DDD;
+$medium-gray: #888;
+$dark-gray: #333;
+$white: #fff;
+$black: #000;
+
+// Blues
+$blue: $light-gray;
+$medium-blue: #5599bf;
+$footer-blue: #293a6a;
+
+$color__primary: $medium-gray;
+$color__primary--light: lighten($color__primary, 10%);
+$color__primary--lighter: lighten($color__primary--light, 10%);
+$color__primary--lightest: lighten($color__primary--lighter, 10%);
+$color__primary--dark: darken($color__primary, 10%);
+$color__primary--darker: darken($color__primary--dark, 10%);
+$color__primary--darkest: darken($color__primary--darker, 10%);
+
+$color__headline: desaturate($color__primary, 55%);
+$color__headline: mix($color__headline, white, 75%);
+
+$color__secondary: $medium-blue;
+$color__secondary--light: lighten($color__secondary, 10%);
+$color__secondary--lighter: lighten($color__secondary--light, 10%);
+$color__secondary--lightest: lighten($color__secondary--lighter, 10%);
+$color__secondary--dark: darken($color__secondary, 10%);
+$color__secondary--darker: darken($color__secondary--dark, 10%);
+$color__secondary--darkest: darken($color__secondary--darker, 10%);
+
+$link-color: $color__secondary;
+$link-color--hover: $color__secondary--light;
+
+// Main menu (dropdown) variables
+$menu-item--fontsize: 1.125em;
+$menu-item--lineheight: $menu-item--fontsize * 1.2;
+
+$menu-item--pad-t: $menu-item--fontsize * .35;
+$menu-item--pad-r: $menu-item--pad-t * 1.125;
+$menu-item--pad-b: $menu-item--pad-t;
+$menu-item--padding: $menu-item--pad-t $menu-item--pad-r $menu-item--pad-b;
+
+$menu-item--margin: $menu-item--fontsize * .5;
+
+$menu-item-caret--top: $menu-item--fontsize * .35;
+$menu-item-caret--margin-l: $menu-item--fontsize * .5;
+$menu-item-caret--margin-b: $menu-item--fontsize * .05;
+
+$menu-height: $menu-item--lineheight + $menu-item--pad-t + $menu-item--pad-b;
+
+$menu-system-margin-top: $menu-item--fontsize * .5;
+$menu-system-margin-left: $menu-item--fontsize * .5;
